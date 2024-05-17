@@ -1,1 +1,190 @@
 @import url(varibles.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    padding: 20px;
+    /* background-color: blueviolet; */
+}
+
+.header .Look_Around_Colorfull {
+    height: 110px;
+}
+
+.nav {
+    /* background-color: bisque; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 45vh;
+}
+
+.nav .Pet {
+    position: absolute;
+}
+
+.nav .Icon_Look_Around /* .Pet img*/ { 
+    height: 300px;
+    width: 300px;
+}
+
+.nav .airplane img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.nav__first_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav__first_button button {
+    width: 125px;
+    height: 45px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-5);
+    border: 1px solid var(--color-5);
+    border-radius: 25vh;
+}
+
+.nav__first_button button {
+    width: 125px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    background-color: var(--color-5);
+    border-color: var(--color-5);
+    border-radius: 25vh;
+    box-shadow: 0px 0px 20px var(--color-6);
+}
+
+.nav__first_button a {
+    text-decoration: none;
+}
+
+.nav__first_button p {
+    font-family: 'Circular-Std-Bold';
+    font-size: 2vh;
+    color: var(--color-3)
+}
+
+.nav__first_button img {
+    margin-left: -10px;
+}
+
+.nav__first_button .local, .nav__first_button .text_first_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+}
+
+.nav__first_button button:hover {
+    background: var(--color-2);
+    transition: all 0.3s linear 0.1s;
+}
+
+.nav__first_button a {
+    text-decoration: none;
+}
+
+.nav__first_button .local, .nav__first_button .text_first_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.nav__second_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+}
+
+.nav__second_button button {
+    width: 170px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--color-5);
+    border: 1px solid var(--color-5);
+    border-radius: 25vh;
+    box-shadow: 0px 0px 20px var(--color-6);
+}
+
+.nav__second_button img {
+    padding-left: 10px;
+}
+
+.nav__second_button p {
+    font-family: 'Circular-Std-Bold';
+    font-size: 2vh;
+    color: var(--color-2)
+}
+
+.nav__second_button a {
+    text-decoration: none;
+}
+
+.nav__second_button button:hover {
+    background: var(--color-7);
+    transition: all 0.3s linear 0.1s;
+}
+
+.footer{
+    /* background: red; */
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+}
+
+.footer__ul{
+    background: var(--color-1);
+    height: 55px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 40px;
+}
+
+.footer__ul li{
+    list-style: none;
+    display: flex;
+}
+
+.footer__ul li a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* background: red; */
+    text-decoration: none;
+    gap: 5px;
+    color: var(--color-5);
+}
+
