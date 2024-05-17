@@ -1,1 +1,48 @@
 @import url(varibles.css);
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header img{
+    padding: 20px;
+    /* background-color: blueviolet; */
+}
+
+.header .Look_Around_Colorfull {
+    height: 110px;
+}
+
+.nav {
+    background-color: bisque;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav .Pet {
+    position: absolute;
+}
+
+.nav .Icon_Look_Around /* .Pet img*/ { 
+    height: 400px;
+    width: 400px;
+}
+
+.nav .airplane img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
