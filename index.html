@@ -89,8 +89,7 @@
                             </div>
                         </li>
                         <li class="services__nav-item">
-                            <img src="storage/img/booking 1.svg" alt="Easy Booking"
-                                class="services__nav-icon" />
+                            <img src="storage/img/booking 1.svg" alt="Easy Booking" class="services__nav-icon" />
                             <div class="services__nav-content">
                                 <h4 class="services__nav-heading">Easy Booking</h4>
                                 <p class="services__nav-text">
@@ -99,8 +98,7 @@
                             </div>
                         </li>
                         <li class="services__nav-item">
-                            <img src="storage/img/cloudy 1.svg" alt="Weather Forecast"
-                                class="services__nav-icon" />
+                            <img src="storage/img/cloudy 1.svg" alt="Weather Forecast" class="services__nav-icon" />
                             <div class="services__nav-content">
                                 <h4 class="services__nav-heading">Weather Forecast</h4>
                                 <p class="services__nav-text">
@@ -111,6 +109,76 @@
                     </ul>
                 </nav>
             </article>
+        </section>
+        <section class="top-destination">
+            <article class="top-destinatio__information">
+                <nav class="top-destinatio__nav">
+                    <div class="services__titles">
+                        <h2 class="services__title">Top Destination</h2>
+                        <h3 class="services__subtitle">Explore top destination</h3>
+                    </div>
+                </nav>
+            </article>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="prueba_1">
+                        <img src="storage/img/mar.svg" style="width:100%">
+                        <div class="text">
+                            <h2>Paradise Beach, Bantayan Island</h2>
+                            <p>Rome, Italy</p>
+                            <div>
+                                <span>4.8</span>
+                                <img src="storage/img/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="storage/img/pez.svg" style="width:100%">
+                        <div class="text">
+                            <h2>Paradise Beach, Bantayan Island</h2>
+                            <p>Rome, Italy</p>
+                            <div>
+                                <span>4.8</span>
+                                <img src="storage/img/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <img src="storage/img/montaña.svg" style="width:100%">
+                        <div class="text">
+                            <h2>Paradise Beach, Bantayan Island</h2>
+                            <p>Rome, Italy</p>
+                            <div>
+                                <span>4.8</span>
+                                <img src="storage/img/star.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="storage/img/Black-name.png" style="width:100%">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="storage/img/Black-name.png" style="width:100%">
+                    <div class="text">Caption Three</div>
+                </div>
+
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </section>
         <section class="testimonials">
             <div class="testimonials__titles">
@@ -206,6 +274,35 @@
             </li>
         </ul>
     </footer>
+
+    <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
 </body>
 
 </html>
