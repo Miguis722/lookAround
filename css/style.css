@@ -170,7 +170,11 @@ main {
   border-top-right-radius: 40px;
   gap: 30px;
 }
-  
+
+.promo {
+  margin: auto
+}
+
   .promo__item {
     display: flex;
     align-items: center;
