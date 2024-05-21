@@ -561,6 +561,9 @@ main {
 
 @media only screen and (min-width: 769px) {
 
+  /* .mySlides{
+    display: flex !important;
+  } */
   /* .information__transactions::-webkit-scrollbar {
       -webkit-appearance: none;
     } */
@@ -873,4 +876,33 @@ img {
   .text {
     font-size: 11px
   }
+}
+
+.travel_point__tittles h2 {
+  font-family: 'Circular-Std-Bold';
+  color: var(--color-8);
+}
+
+.travel_point__tittles h1 {
+  font-family: 'Circular-Std-Bold';
+  color: var(--color-3);
+}
+
+.travel_point__tittles p {
+ font-family: 'Inter-regular'; 
+ color: var(--color-6);
+}
+
+.travel_point__buttons h1 {
+  font-family: 'Circular-Std-Bold';
+  color: var(--color-1);
+}
+
+.travel_point__buttons p {
+  font-family: 'Inter-regular';
+  color: var(--color-4);
+}
+
+.girl_on_a_backpack{
+  width: 100%;
 }
