@@ -737,6 +737,10 @@ main {
   margin-bottom: 80px;
 }
 
+.top-destinatio__nav {
+  font-family: 'Circular-Std-Bold';
+}
+
 .mySlides {
   display: flex;
   flex-direction: row;
@@ -766,6 +770,19 @@ img {
 .prueba_1:hover {
   background-color: var(--color-6);
   transform: scale(1.2);
+  transition: all 0.1s linear 0.1s;
+}
+
+.prueba_1 h1{
+  font-family: 'Circular-Std-Bold';
+}
+
+.prueba_1 p {
+  font-family: 'Inter-Regular';
+}
+
+.prueba_1 span {
+  font-family: 'Circular-Std-Bold';
 }
 
 /* Next & previous buttons */
