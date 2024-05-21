@@ -561,9 +561,15 @@ main {
 
 @media only screen and (min-width: 769px) {
 
-  /* .mySlides{
-    display: flex !important;
-  } */
+  .travel_point{
+    display: flex;
+  }
+  .travel_point__image{
+    width: 70%;
+  }
+  .prueba_2{
+    width: 30%;
+  }
   /* .information__transactions::-webkit-scrollbar {
       -webkit-appearance: none;
     } */
@@ -761,6 +767,8 @@ img {
   position: relative;
   margin: auto;
   padding-top: 15px;
+  display: flex;
+  flex-direction: row;
 }
 
 .prueba_1 {
@@ -905,4 +913,71 @@ img {
 
 .girl_on_a_backpack{
   width: 100%;
+}
+
+.travel_point__buttons {
+  gap: 25px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+}
+
+.travel_point__buttons ul {
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.travel_point__buttons li {
+  text-decoration: none;
+  list-style: none;
+  border: 1px solid var(--color-10);
+  border-radius: 25%;
+  height: 100px;
+  width: 160px;
+  align-content: center;
+}
+
+.travel_point {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  align-self: center;
+}
+
+.travel_point__tittles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.travel_point__tittles h1, h2 {
+  text-align: center;
+}
+
+.travel_point__tittles span {
+  text-align: justify;
+}
+
+.prueba_2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 15px;
+}
+
+.travel_point__buttons__1 h2{
+  color: var(--color-1);
+}
+
+@media only screen and (min-width:762px) {
+  .travel_point__buttons__1 h2{
+    color: var(--color-9);
+  }
 }
