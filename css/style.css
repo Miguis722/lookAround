@@ -725,7 +725,12 @@ main {
 }
 
 .top-destination {
+  width: 100%;
   margin-top: 15px;
+}
+
+.top-destination a {
+  text-decoration: none;
 }
 
 .top-destinatio__information {
@@ -733,7 +738,10 @@ main {
 }
 
 .mySlides {
-  display: none
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 15px;
 }
 
 img {
@@ -745,11 +753,19 @@ img {
   max-width: 1000px;
   position: relative;
   margin: auto;
+  padding-top: 15px;
 }
 
 .prueba_1 {
   height: 25rem;
   margin-bottom: 30px;
+  box-shadow: 0 0 15px #323f4e26;
+  border-radius: 10%;
+}
+
+.prueba_1:hover {
+  background-color: var(--color-6);
+  transform: scale(1.2);
 }
 
 /* Next & previous buttons */

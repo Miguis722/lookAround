@@ -84,6 +84,7 @@
             </article>
             <div class="slideshow-container">
                 <div class="mySlides fade">
+                    <a href="#">
                     <div class="prueba_1">
                         <img src="storage/img/mar.svg" style="width:100%">
                         <div class="text">
@@ -94,8 +95,9 @@
                                 <img src="storage/img/star.svg" alt="">
                             </div>
                         </div>
-                    </div>
-                    <div>
+                    </div></a>
+                    <a href="#">
+                    <div class="prueba_1">
                         <img src="storage/img/pez.svg" style="width:100%">
                         <div class="text">
                             <h2>Paradise Beach, Bantayan Island</h2>
@@ -105,8 +107,9 @@
                                 <img src="storage/img/star.svg" alt="">
                             </div>
                         </div>
-                    </div>
-                    <div>
+                    </div></a>
+                    <a href="#">
+                    <div class="prueba_1">
                         <img src="storage/img/montaña.svg" style="width:100%">
                         <div class="text">
                             <h2>Paradise Beach, Bantayan Island</h2>
@@ -116,7 +119,7 @@
                                 <img src="storage/img/star.svg" alt="">
                             </div>
                         </div>
-                    </div>
+                    </div></a>
                 </div>
 
                 <div class="mySlides fade">
@@ -262,7 +265,7 @@
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex - 1].style.display = "block";
+            slides[slideIndex - 1].style.display = "flex";
             dots[slideIndex - 1].className += " active";
         }
     </script>
