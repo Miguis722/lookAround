@@ -7,6 +7,9 @@
     <title>Look Around</title> <!-- Home o pagina principal -->
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="storage/img/Page 14.png" type="image/x-icon">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -364,17 +367,50 @@
 
         </section>
     </main>
-    <footer class="footer">
-        <ul class="footer__ul">
-            <li>
-                <a href="#">
-                    <span>Get started</span>
-                </a>
-            </li>
-        </ul>
-    </footer>
+    <footer class="nav-footer">
+        <div class="nav-footer-item nav col-sm-3">
+          <h4>Title</h4>
+          <ul>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+          </ul>
+        </div>
+          <div class="nav-footer-item nav col-sm-3">
+          <h4>Title</h4>
+          <ul>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+          </ul>
+        </div>
+          <div class="nav-footer-item nav col-sm-3">
+          <h4>Title</h4>
+          <ul>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+          </ul>
+        </div>
+        <div class="nav-footer-item nav col-sm-3">
+          <h4>Title</h4>
+          <ul>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+            <li><a href="#">Item</a></li>
+          </ul>
+        </div>
+      </footer>
 
     <script>
+          jQuery(".nav-footer h4").click(function(){
+      jQuery(this).parent(".nav").toggleClass("open"); 
+  });
         let slideIndex = 1;
         showSlides(slideIndex);
 
