@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="storage/img/Page 14.png" type="image/x-icon">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
-<script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -351,7 +351,7 @@
                 </div>
             </div>
         </section>
-        <section class="final_section">
+        <!-- <section class="final_section">
             <div class="final_section_tittle__left_side">
                 <div class="final_section_tittle">
                     <img src="storage/img/Icon.png" class="mascota">
@@ -365,52 +365,40 @@
                 </div>
             </div>
 
-        </section>
+        </section> -->
     </main>
     <footer class="nav-footer">
         <div class="nav-footer-item nav col-sm-3">
-          <h4>Title</h4>
-          <ul>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-          </ul>
-        </div>
-          <div class="nav-footer-item nav col-sm-3">
-          <h4>Title</h4>
-          <ul>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-          </ul>
-        </div>
-          <div class="nav-footer-item nav col-sm-3">
-          <h4>Title</h4>
-          <ul>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-          </ul>
+            <h4>Company</h4>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Career</a></li>
+                <li><a href="#">Mobile</a></li>
+            </ul>
         </div>
         <div class="nav-footer-item nav col-sm-3">
-          <h4>Title</h4>
-          <ul>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-            <li><a href="#">Item</a></li>
-          </ul>
+            <h4>Contact</h4>
+            <ul>
+                <li><a href="#">Why Travlog?</a></li>
+                <li><a href="#">Partner with us</a></li>
+                <li><a href="#">FAQ’s</a></li>
+                <li><a href="#">Blog</a></li>
+            </ul>
         </div>
-      </footer>
+        <div class="nav-footer-item nav col-sm-3">
+            <h4>Meet Us</h4>
+            <ul>
+                <li><a href="#">+57 1234 56789</a></li>
+                <li><a href="#">info@correofalso.com</a></li>
+                <li><a href="#">205. R Street, New York</a></li>
+            </ul>
+        </div>
+    </footer>
 
     <script>
-          jQuery(".nav-footer h4").click(function(){
-      jQuery(this).parent(".nav").toggleClass("open"); 
-  });
+        jQuery(".nav-footer h4").click(function () {
+            jQuery(this).parent(".nav").toggleClass("open");
+        });
         let slideIndex = 1;
         showSlides(slideIndex);
 
@@ -434,7 +422,7 @@
             for (i = 0; i < dots.length; i++) {
                 dots[i].className = dots[i].className.replace(" active", "");
             }
-            slides[slideIndex - 1].style.display = "flex";
+            slides[slideIndex - 1].style.display = "block";
             dots[slideIndex - 1].className += " active";
         }
     </script>

@@ -27,16 +27,6 @@
   margin: auto;
 }
 
-.nav {
-  /* background-color: bisque; */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  height: 45vh;
-}
-
 .nav .Pet {
   position: absolute;
 }
@@ -621,6 +611,22 @@ main {
     width: 75vh;
   }
 
+  .nav {
+    /* background-color: bisque; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    height: 45vh;
+  }
+    .nav-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: 30px auto 0 auto;
+  }
 }
 
 .top-destination {
@@ -837,6 +843,7 @@ img {
   align-items: center;
   align-content: center;
   align-self: center;
+  flex-direction: column;
 }
 
 .travel_point__tittles {
